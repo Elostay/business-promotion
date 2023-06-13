@@ -15,7 +15,6 @@
 		integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
@@ -46,7 +45,12 @@
 					<div class="header-buttons">
 						<button type="button" class="sign-in">Sign In</button>
 						<button type="button" class="sign-up">Sign Up</button>
-						<button type="button" class="switcher">
+						<button class="switcher light " title="Light mode" onclick="setTheme('light')">
+							<svg width="24" height="24" class="switcher-svg">
+								<use href="./images/svg.svg#switcher"></use>
+							</svg>
+						</button>
+						<button class="switcher dark" title="Dark mode" onclick="setTheme('dark')">
 							<svg width="24" height="24" class="switcher-svg">
 								<use href="./images/svg.svg#switcher"></use>
 							</svg>
@@ -499,5 +503,6 @@
 		</div>
 
 	</footer>
-
+	<script>const setTheme = theme => document.documentElement.className = theme;
+	</script>
 </body>
