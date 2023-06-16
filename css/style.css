@@ -161,12 +161,12 @@ body {
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -10px;
 	background-color: var(--green-color);
 	height: 4px;
 	border-radius: 2px;
 	display: block;
 	width: 100%;
+	bottom: -10px;
 }
 .header-buttons {
 	display: flex;
