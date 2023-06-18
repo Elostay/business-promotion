@@ -284,13 +284,22 @@ body {
 /*------------------------------------------------------------------*/
 .built {
 	padding-bottom: 50px;
+	position: relative;
+}
+.container {
+}
+.built::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	height: 100%;
+	width: 120%;
 	background: linear-gradient(0, #ededed 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
 	border-bottom-left-radius: 50%;
 	border-bottom-right-radius: 50%;
-	/* background-image: url(../images/bg-1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: -259px 0; */
 }
 .built-title {
 	margin: 0 auto;
@@ -435,13 +444,20 @@ body {
 .process {
 	padding-top: 50px;
 	padding-bottom: 100px;
+	position: relative;
+}
+.process::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	height: 100%;
+	width: 120%;
 	background: linear-gradient(179.59deg, #ededed 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
-
 	border-top-left-radius: 50%;
 	border-top-right-radius: 50%;
-	/* background-image: url(../images/bg-2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover; */
 }
 .process-box {
 	text-align: center;
