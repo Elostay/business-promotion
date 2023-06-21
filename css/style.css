@@ -40,6 +40,7 @@ button {
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: #ffffff;
+	overflow-x: hidden;
 }
 :root {
 	--green-color: #02897a;
